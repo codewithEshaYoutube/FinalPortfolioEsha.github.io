@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Esha Tariq Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Additional meta tags, stylesheets, or scripts can be added here -->
+    <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" class="logo" alt="Jumping Neon Logo">
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sevices.html">Services</a></li>
+        <li><a href="https://eeshatariq.blogspot.com/">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav> 
+      <div class="header-text">   
+</head>
+<body><div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <!-- Your grid items or content go here -->
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .slider-container {
+        overflow: hidden;
+        width: 85%;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        flex: 0 0 50%;
+        padding: 20px;
+        text-align: center;
+        background-color: #333;
+        border-radius: 10px;
+        margin-right: 10px;
+        opacity: 0.7;
+        transition: opacity 0.5s;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .slide.center {
+        flex: 0 0 50%;
+        opacity: 1;
+        background-color: #301934;
+        height: 100%;
+    }
+    
+    .slide:hover {
+      background-color: #ff0051;
+      transform: scale(1.01); /* Increase the scale for a subtle zoom-in effect */
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition for the zoom effect */
+      margin-bottom: -4px; /* Adjusted margin for a more balanced appearance */
+      margin-top: -4px;
+      height: 50%;
+    }
+    
+    .slide i {
+        font-size: 36px;
+        color: #fff;
+        margin: 0;
+    }
+    
+    .slide h2,
+    .slide p {
+        color: #fff;
+        font-size: 16px;
+        margin: 8px 0 0 0;
+    }
+    
+    .prev, .next {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #fff;
+        background-color: #301934;
+        border: none;
+        padding: 0px;
+        border-radius: 0;
+    }
+    
+    .prev { left: 0; }
+    .next { right: 0; }
+    
+    .prev.active,
+    .next.active {
+        background-color: #f400f4;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppind',sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background: #ffffff;
+        color: #fff;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/background2.jpg);
+        background-size: cover;
+        background-position:center ;
+     }
+          .container{
+            padding: 10px 10%;
+          }
+          nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            display: inline;
+        }
+        @media only screen and (min-width: 601px) {
+            nav {
+                display: flex;
+            }
+        }
+        .logo {
+            width: 140px;
+          }
+        
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+          content:'' ;
+          width: 0 ;
+          height: 3px ;
+          background:#ff004f ;
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    #about{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+         flex-basis: 35%;
+    }
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color:#fff;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 200%;
+        margin-top: 20px;
+        text-decoration: solid;
+        text-shadow: #080808;
+    }
+    .header-text h1 span{
+        color: #ff004f;
+    }
+    .header-text p span{
+        color: #ff004f;
+    }
+    .filled-box {
+        border: 1px solid #ff004f;
+        background-color: #ff004f;
+        padding: 10px;
+        width: 300px;
+        margin: 100px;
+        font-style: normal;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        border-radius: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
+        animation: jump 1s infinite, pulsate 2s infinite alternate;
+    }
+    
+    .filled-box p span {
+        color: #080808;
+        size-adjust: 10;
+        
+
+    </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+    <div class="slides">
+        <div class="slide center" onclick="expandSlide(1)">
+          <i class="fa-solid fa-code"></i> <!-- Updated to a more professional icon -->
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="https://proooooooooooooooooo.github.io/Ecommerce-website/">learnmore</a>
+        </div>
+        <div class="slide " onclick="expandSlide(0)">
+          <i class="fa-brands fa-app-store-ios"></i> <!-- Updated to a more professional icon -->
+            <h2>App Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide " onclick="expandSlide(2)">
+            
+    <i class="fa-brands fa-wordpress"></i> <!-- Updated to a more professional icon -->
+            <h2>WordPress</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <!-- Add more slides as needed -->
+        <div class="slide" onclick="expandSlide(3)">
+          <i class="fa-brands fa-shopify"></i><!-- Updated to a more professional icon -->
+            <h2>Shopify</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(4)">
+          <i class="fa-brands fa-amazon"></i> <!-- Updated to a more professional icon -->
+            <h2>Amazon VA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(5)">
+          <i class="fa-brands fa-wix"></i><!-- Updated to a more professional icon -->
+            <h2>Wix</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(6)">
+          <i class="fa-brands fa-youtube"></i><!-- Updated to a more professional icon -->
+            <h2>Youtube Video Editing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+      </div>
+      <button class="next" onclick="nextSlide()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+  </div>
+
+<!-- ----------------------portfolio-------------------- -->
+<style>
+  #portfolio {
+    padding: 50px 0;
+  }
+
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+  }
+
+  .work {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .work img {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .work:hover img {
+    transform: scale(1.5);
+    opacity: 0.8;
+
+  }
+
+  .layer {
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0%;
+    overflow: hidden;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: height 0.5s ease-in-out;
+    opacity: 90%;
+  }
+
+  .work:hover .layer {
+    height: 100%;
+    
+  }
+
+  .layer h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  .layer p {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .layer a i {
+    color: #ff004f;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0,)
+
+    }
+</style>
+
+<script>
+    function opentab(tabName) {
+        const tabContents = document.querySelectorAll('.tab-content');
+        const tabLinks = document.querySelectorAll('.tab-links');
+  
+        tabContents.forEach(content => content.classList.remove('active-tab'));
+        tabLinks.forEach(link => link.classList.remove('active-link'));
+  
+        const selectedTab = document.getElementById(tabName);
+        if (selectedTab) {
+            selectedTab.classList.add('active-tab');
+  
+            const selectedTabLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase() === tabName.toLowerCase());
+            if (selectedTabLink) {
+                selectedTabLink.classList.add('active-link');
+            }
+        }
+    }
+  
+    function opentab(tabname) {
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-content");
+  
+        Array.from(tablinks).forEach(link => link.classList.remove("active-link"));
+        Array.from(tabcontents).forEach(content => content.classList.remove("active-tab"));
+  
+        const clickedTab = event.currentTarget;
+        clickedTab.classList.add("active-link");
+  
+        const targetTabContent = document.getElementById(tabname);
+        if (targetTabContent) {
+            targetTabContent.classList.add("active-tab");
+        }
+    }
+  
+    let currentIndex = 1;
+  
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+        updateSlider();
+    }
+  
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+        updateSlider();
+    } 
+  
+    function updateSlider() {
+        const slides = document.querySelector('.slides');
+        const slideWidth = document.querySelector('.slide').offsetWidth;
+        const translateValue = -currentIndex * (slideWidth + 10); /* Consider margin between slides */
+        slides.style.transform = `translateX(${translateValue}px)`;
+    }
+  
+    function expandSlide(index) {
+        currentIndex = index;
+        updateSlider();
+    }
+  </script>

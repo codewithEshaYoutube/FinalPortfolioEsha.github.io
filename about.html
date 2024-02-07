@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Esha Tariq Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Additional meta tags, stylesheets, or scripts can be added here -->
+    <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" class="logo" alt="Jumping Neon Logo">
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sevices.html">Services</a></li>
+        <li><a href="https://eeshatariq.blogspot.com/">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav> 
+      <div class="header-text">   
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-col-1 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .about-col-2 {
+            max-width: 600px;
+            margin-left: auto;
+        }
+
+        h1.sub-title {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .tab-titles {
+            display: flex;
+            margin: 20px 0 40px;
+        }
+
+        .tab-links {
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .tab-links::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: width 0.5s;
+        }
+
+        .tab-links:hover {
+            color: #ff004f;
+        }
+
+        .tab-links.active-link::after {
+            width: 50%;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active-tab {
+            display: block;
+        }
+
+        .tab-content ul li span {
+            font-size: 16px;
+            color: #ff004f;
+        }
+
+        .magical-button {
+            background-color: #ff004f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .magical-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+    <div id="about" class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/user.png" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut quam vel purus malesuada pharetra ac id nulla.
+                    Esha Tariq is an illustrious frontend developer with a passion for crafting seamless user experiences. Her expertise
+                    in HTML, CSS, and JavaScript is unparalleled, creating visually stunning and responsive websites that captivate users
+                    from the first glance. Her attention to detail and creative flair transform ideas into visually stunning and
+                    functionally robust web applications.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web development</span><br>Wordpress|Wix|shopify|Blogger|Canva</li>
+                        <li><span>App development</span> <br> app ios/Android </li>
+                        <li><span>Flutter app development</span><br> Software engineer</li>
+                        <li><span>Python programming</span><br>Project Development</li>
+                        <li><span>Amazon virtual assistant</span><br> Managing stores</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Experience">
+                  <ul>
+                    <li>
+                      <strong><span>2+ Years of Professional Experience:</span></strong> Software Engineer
+                  </li>
+                    <li>
+                        <strong>Currently:</strong> Software Engineer at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>Oct-Nov 2023:</strong> Junior Developer at <span>Codsoft</span>
+                    </li>
+                    <li>
+                        <strong>Dec 2023:</strong> Intern at <span>Oasis Infobyte</span>
+                    </li>
+                    <li>
+                        <strong>Jan-Mar 2023:</strong> Software Development Intern at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>WPDevCert 2022:</strong> WordPress Front-End Development Certification from <span>WPDevCert</span>
+                    </li>
+                    <li>
+                        <strong>2021-2024:</strong> Freelance Web Developer on <span>Upwork (serving 10+ clients)</span>
+                    </li>
+                    <li>
+                        <strong>Apr 2024 - Present:</strong> Software Engineer at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>May 2023 - Aug 2023:</strong> Software Engineer Intern at <span>TechSolutions Inc.</span>
+                    </li>
+                    <li>
+                        <strong>Jan 2023 - Apr 2023:</strong> Frontend Developer Intern at <span>WebInnovate Solutions</span>
+                    </li>
+                </ul>
+              </div> <!-- Closing tag for the "Experience" tab -->
+              <div class="tab-content" id="Education">
+                  <!-- Education content goes here -->
+                  <ul>
+                    <li>
+                        <strong>2019-2023:</strong> Bachelor of Science in Software Engineering
+                        <br>
+                        <span>The Islamia University of Bahawalpur</span>
+                    </li>
+                    <li>
+                        <strong>2022-2023:</strong> Python Programming Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>2023:</strong> Frontend Development Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>October 2023:</strong> Flutter Development Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>Jun-Sept 2023:</strong> Amazon Virtual Assistant Training
+                        <br>
+                        <span>Amazon Virtual Assistant Program</span>
+                    </li>
+                </ul>
+                  
+               </div>   
+            </div>
+        </div>
+    </div>
+    <style>#about{
+        background-color: #080808;
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+         flex-basis: 35%;
+    }
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color:#fff;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 200%;
+        margin-top: 20px;
+        text-decoration: solid;
+        text-shadow: #080808;
+    }
+    .header-text h1 span{
+        color: #ff004f;
+    }
+    .header-text p span{
+        color: #ff004f;
+    }
+    .filled-box {
+        border: 1px solid #ff004f;
+        background-color: #ff004f;
+        padding: 10px;
+        width: 300px;
+        margin: 100px;
+        font-style: normal;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        border-radius: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
+        animation: jump 1s infinite, pulsate 2s infinite alternate;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppind',sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background: #000000;
+        color: #000000;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/background2.jpg);
+        background-size: cover;
+        background-position:center ;
+     }
+          .container{
+            padding: 10px 10%;
+          }
+          nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            display: inline;
+        }
+        @media only screen and (min-width: 601px) {
+            nav {
+                display: flex;
+            }
+        }
+        .logo {
+            width: 140px;
+          }
+        
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+          content:'' ;
+          width: 0 ;
+          height: 3px ;
+          background:#ff004f ;
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    #about{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+         flex-basis: 35%;
+    }
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color:#fff;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 200%;
+        margin-top: 20px;
+        text-decoration: solid;
+        text-shadow: #080808;
+    }
+    .header-text h1 span{
+        color: #ff004f;
+    }
+    .header-text p span{
+        color: #ff004f;
+    }
+    .filled-box {
+        border: 1px solid #ff004f;
+        background-color: #ff004f;
+        padding: 10px;
+        width: 300px;
+        margin: 100px;
+        font-style: normal;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        border-radius: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
+        animation: jump 1s infinite, pulsate 2s infinite alternate;
+    }
+    
+    .filled-box p span {
+        color: #080808;
+        size-adjust: 10;
+    .filled-box p span {
+        color: #080808;
+        size-adjust: 10;
+    }
+    
+    @keyframes neonColors {
+        0% {
+            background-color: #ff004f;
+            box-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
+        }
+        50% {
+            background-color: #ff00a4;
+            box-shadow: 0 0 15px rgba(255, 0, 164, 0.8);
+        }
+        100% {
+            background-color: #ff004f;
+            box-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
+        }
+    }
+    </style>
+    <script>
+        function opentab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabLinks = document.querySelectorAll('.tab-links');
+
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+
+            const selectedTab = document.getElementById(tabName);
+            selectedTab.classList.add('active-tab');
+
+            const selectedTabLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase() === tabName.toLowerCase());
+            selectedTabLink.classList.add('active-link');
+        }
+
+    </script>
+
+</body>
+</html>
