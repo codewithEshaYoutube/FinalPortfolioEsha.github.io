@@ -1,4 +1,4 @@
-# FinalPortfolioEsha.github.io
+
 # FinalPortfolioEsha
 
 Welcome to my personal portfolio website! This project is built using React and showcases my skills, projects, and experience. The portfolio is designed to be dynamic and responsive, providing a smooth user experience across various devices.
