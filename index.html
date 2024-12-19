@@ -1,24 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Enhancement Tool</title>
-    <link rel="stylesheet" href="styles.css">
+  
+    <title>Esha Tariq Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Additional meta tags, stylesheets, or scripts can be added here -->
+    <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" class="logo" alt="Jumping Neon Logo">
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sevices.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav> 
+      <div class="header-text">   
 </head>
 <body>
-    <div class="container">
-        <h1>Image Enhancement Tool</h1>
-        <input type="file" id="upload" accept="image/*" />
-        <canvas id="canvas"></canvas>
-        <div class="controls">
-            <label for="brightness">Brightness:</label>
-            <input type="range" id="brightness" min="0" max="200" value="100" />
-            <label for="contrast">Contrast:</label>
-            <input type="range" id="contrast" min="0" max="200" value="100" />
-            <button id="download">Download Image</button>
+  <div>
+         <h5><span>Software Engineer|JavaScript|Node.js|vue.js</span></h5>
+          <h1>Hi,I'm <Span>Esha </Span>Tariq.
+          </h1>
+        </div>
+          <div class="filled-box">
+        <p><span>Frontend developer|Wordpress|shopify</span></p>
+        
+      </div>
+    </div>  
+</div>
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-puzzle-container">
+      <div class="loading-puzzle">
+          <div class="puzzle-code"></i></div>
+      </div>
+      <div class="loading-puzzle">
+          <div class="puzzle-code"><i class="fa-solid fa-code"></i></div>
+      </div>
+      <div class="loading-puzzle">
+          <div class="puzzle-code"></div>
+      </div>
+  </div>
+</div>
+<!-- -----------------about----------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about-col-1 img {
+            max-width: 100%;
+            height: auto;
+        }
+        .about-col-2 {
+            max-width: 600px;
+            margin-left: auto;
+        }
+        h1.sub-title {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+        .tab-titles {
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        .tab-links {
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .tab-links::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: width 0.5s;
+        }
+        .tab-links:hover {
+            color: #ff004f;
+        }
+        .tab-links.active-link::after {
+            width: 50%;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active-tab {
+            display: block;
+        }
+        .tab-content ul li span {
+            font-size: 16px;
+            color: #ff004f;
+        }
+        .magical-button {
+            background-color: #ff004f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .magical-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/05127fae8b.js" crossorigin="anonymous"></script>
+    <div id="about" class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/user.png" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut quam vel purus malesuada pharetra ac id nulla.
+                    Esha Tariq is an illustrious frontend developer with a passion for crafting seamless user experiences. Her expertise
+                    in HTML, CSS, and JavaScript is unparalleled, creating visually stunning and responsive websites that captivate users
+                    from the first glance. Her attention to detail and creative flair transform ideas into visually stunning and
+                    functionally robust web applications.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web development</span><br>Wordpress|Wix|shopify|Blogger|Canva</li>
+                        <li><span>App development</span> <br> app ios/Android </li>
+                        <li><span>Flutter app development</span><br> Software engineer</li>
+                        <li><span>Python programming</span><br>Project Development</li>
+                        <li><span>Amazon virtual assistant</span><br> Managing stores</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Experience">
+                  <ul>
+                    <li>
+                      <strong><span>2+ Years of Professional Experience:</span></strong> Software Engineer
+                  </li>
+                    <li>
+                        <strong>Currently:</strong> Software Engineer at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>Oct-Nov 2023:</strong> Junior Developer at <span>Codsoft</span>
+                    </li>
+                    <li>
+                        <strong>Dec 2023:</strong> Intern at <span>Oasis Infobyte</span>
+                    </li>
+                    <li>
+                        <strong>Jan-Mar 2023:</strong> Software Development Intern at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>WPDevCert 2022:</strong> WordPress Front-End Development Certification from <span>WPDevCert</span>
+                    </li>
+                    <li>
+                        <strong>2021-2024:</strong> Freelance Web Developer on <span>Upwork (serving 10+ clients)</span>
+                    </li>
+                    <li>
+                        <strong>Apr 2024 - Present:</strong> Software Engineer at <span>Alfido Tech</span>
+                    </li>
+                    <li>
+                        <strong>May 2023 - Aug 2023:</strong> Software Engineer Intern at <span>TechSolutions Inc.</span>
+                    </li>
+                    <li>
+                        <strong>Jan 2023 - Apr 2023:</strong> Frontend Developer Intern at <span>WebInnovate Solutions</span>
+                    </li>
+                </ul>
+              </div> <!-- Closing tag for the "Experience" tab -->
+              <div class="tab-content" id="Education">
+                  <!-- Education content goes here -->
+                  <ul>
+                    <li>
+                        <strong>2019-2023:</strong> Bachelor of Science in Software Engineering
+                        <br>
+                        <span>The Islamia University of Bahawalpur</span>
+                    </li>
+                    <li>
+                        <strong>2022-2023:</strong> Python Programming Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>2023:</strong> Frontend Development Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>October 2023:</strong> Flutter Development Certification
+                        <br>
+                        <span>Great Learning</span>
+                    </li>
+                    <li>
+                        <strong>Jun-Sept 2023:</strong> Amazon Virtual Assistant Training
+                        <br>
+                        <span>Amazon Virtual Assistant Program</span>
+                    </li>
+                </ul>
+                  
+               </div>   
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function opentab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabLinks = document.querySelectorAll('.tab-links');
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            const selectedTab = document.getElementById(tabName);
+            selectedTab.classList.add('active-tab');
+            const selectedTabLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase() === tabName.toLowerCase());
+            selectedTabLink.classList.add('active-link');
+        }
+    </script>
+</body>
+</html>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "vxV9dSCzsLv6wVQwU8NyZ",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="vxV9dSCzsLv6wVQwU8NyZ"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+  <!-- ------------------------services------------------------ -->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <!-- Your grid items or content go here -->
+        </div>
+    </div>
+</div>
+    <style>
+      body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .slider-container {
+        overflow: hidden;
+        width: 85%;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        flex: 0 0 50%;
+        padding: 20px;
+        text-align: center;
+        background-color: #333;
+        border-radius: 10px;
+        margin-right: 10px;
+        opacity: 0.7;
+        transition: opacity 0.5s;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .slide.center {
+        flex: 0 0 50%;
+        opacity: 1;
+        background-color: #301934;
+        height: 100%;
+    }
+    
+    .slide:hover {
+      background-color: #ff0051;
+      transform: scale(1.01); /* Increase the scale for a subtle zoom-in effect */
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition for the zoom effect */
+      margin-bottom: -4px; /* Adjusted margin for a more balanced appearance */
+      margin-top: -4px;
+      height: 50%;
+    }
+    
+    .slide i {
+        font-size: 36px;
+        color: #fff;
+        margin: 0;
+    }
+    
+    .slide h2,
+    .slide p {
+        color: #fff;
+        font-size: 16px;
+        margin: 8px 0 0 0;
+    }
+    
+    .prev, .next {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #fff;
+        background-color: #301934;
+        border: none;
+        padding: 0px;
+        border-radius: 0;
+    }
+    
+    .prev { left: 0; }
+    .next { right: 0; }
+    
+    .prev.active,
+    .next.active {
+        background-color: #f400f4;
+    }
+    
+        
+    </style>
+</head>
+<body>
+  <div class="slider-container">
+    <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+    <div class="slides">
+        <div class="slide center" onclick="expandSlide(1)">
+          <i class="fa-solid fa-code"></i> <!-- Updated to a more professional icon -->
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="https://proooooooooooooooooo.github.io/Ecommerce-website/">learnmore</a>
+        </div>
+        <div class="slide " onclick="expandSlide(0)">
+          <i class="fa-brands fa-app-store-ios"></i> <!-- Updated to a more professional icon -->
+            <h2>App Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide " onclick="expandSlide(2)">
+            
+    <i class="fa-brands fa-wordpress"></i> <!-- Updated to a more professional icon -->
+            <h2>WordPress</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <!-- Add more slides as needed -->
+        <div class="slide" onclick="expandSlide(3)">
+          <i class="fa-brands fa-shopify"></i><!-- Updated to a more professional icon -->
+            <h2>Shopify</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(4)">
+          <i class="fa-brands fa-amazon"></i> <!-- Updated to a more professional icon -->
+            <h2>Amazon VA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(5)">
+          <i class="fa-brands fa-wix"></i><!-- Updated to a more professional icon -->
+            <h2>Wix</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+        <div class="slide" onclick="expandSlide(6)">
+          <i class="fa-brands fa-youtube"></i><!-- Updated to a more professional icon -->
+            <h2>Youtube Video Editing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">learnmore</a>
+        </div>
+      </div>
+      <button class="next" onclick="nextSlide()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+  </div>
+<!-- ----------------------portfolio-------------------- -->
+<style>
+  #portfolio {
+    padding: 50px 0;
+  }
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+  }
+  .work {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .work img {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .work:hover img {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  .layer {
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0%;
+    overflow: hidden;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: height 0.5s ease-in-out;
+    opacity: 90%;
+  }
+  .work:hover .layer {
+    height: 100%;
+    
+  }
+  .layer h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  .layer p {
+    color: #ffffff;
+    margin: 0;
+  }
+  .layer a i {
+    color: #ff004f;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0,)
+    }
+</style>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <!-- Work 1: Social Media App -->
+      <div class="work">
+        <img src="./images/work-1.png" alt="Social Media App">
+        <div class="layer">
+          <h3>Social Media App</h3>
+         
+          <p>Enjoy this amazing app which connects you with amazing people – download it effortlessly from the App Store!</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+     
+      <!-- Work 2: Music App -->
+      <div class="work">
+        <img src="./images/work-2.png" alt="Music App">
+        <div class="layer">
+          <h3>Car service App</h3>
+        
+         
+          <p>Enjoy this amazing app which connects you with amazing people – download it effortlessly from the App Store!</p>
+          <a href="carsauto.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <!-- Work 3: Online Shopping App -->
+      <div class="work">
+        <img src="./images/work-3.png" alt="Online Shopping App">
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>Enjoy this amazing app which connects you with amazing people – download it effortlessly from the App Store!</p>
+          <a href="https://proooooooooooooooooo.github.io/Ecommerce-website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        
+    </div><!-- End of work-list -->
+  </div><!-- End of container -->
+</div><!-- End of portfolio -->
+ 
+  <div class="button-container">
+        <a href="#" class="see-more-btn">See More</a>
+      </div>
+      <h1 ><div class="subtitle">Contact Me</div></h1>
+      <div class="contactcontainer">
+          <div class="row">
+      
+              <div class="contactleft">
+                  <p><i class="fa-solid fa-paper-plane"></i>tariqeesha321@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i> 012345678</p>
+                
+              </div>
+              <!-- Close contactleft div -->
+           
+      
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="z" data-type="VERTICAL" data-vanity="esha-tariq-6aa541283" data-version="v1">
+             
+          </div>
+          <div class="socialicons">
+            <a href="https://github.com/codewithEshaYoutube/"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/esha-tariq-6aa541283/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.pinterest.com/developeresha/"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/xeshious.official/"><i class="fab fa-instagram"></i></a>
+        </div>
+              <!-- Close contactright div -->
+              <a href="./images/Most updated Resume Esha Tariq.pdf" download class="btn-btn2">Download CV</a>
+          </div>
+          <!-- Close row div -->
+          <div class="contactright">
+            <form name="submit-to-google-sheet" action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="Email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="Message" placeholder="Your message..." required></textarea>
+                <button type="submit">Submit</button> 
+            </form>
+            <span id="msg"></span>
+            
+             
+          </div>
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="esha-tariq-6aa541283" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/esha-tariq-6aa541283?trk=profile-badge">Esha Tariq</a></div>
+              
+          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      <!-- Close contactcontainer div -->
+      
+      <!-- You may need to close other parent divs based on your overall HTML structure -->
+      
+    </div><!-- End of work-list -->
+    <div> <div class="copyright">
+        <p>Copyright © Esha Portfolio. Made with <i class="fa-solid fa-heart"></i> by EshaTariq</p>
+      </div>
+  </div><!-- End of container -->
+  
+</div><!-- End of portfolio -->
+<!-- -----------contact----------------------- -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxW9lPR6UWkeZ3uxq0f3ffeDJ1u96WUwnuwPOToxQoAkKwPD79SrHAvwfv_Hjsy98Q1/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout( function(){
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+  function opentab(tabName) {
+      const tabContents = document.querySelectorAll('.tab-content');
+      const tabLinks = document.querySelectorAll('.tab-links');
+      tabContents.forEach(content => content.classList.remove('active-tab'));
+      tabLinks.forEach(link => link.classList.remove('active-link'));
+      const selectedTab = document.getElementById(tabName);
+      if (selectedTab) {
+          selectedTab.classList.add('active-tab');
+          const selectedTabLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase() === tabName.toLowerCase());
+          if (selectedTabLink) {
+              selectedTabLink.classList.add('active-link');
+          }
+      }
+  }
+  function opentab(tabname) {
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-content");
+      Array.from(tablinks).forEach(link => link.classList.remove("active-link"));
+      Array.from(tabcontents).forEach(content => content.classList.remove("active-tab"));
+      const clickedTab = event.currentTarget;
+      clickedTab.classList.add("active-link");
+      const targetTabContent = document.getElementById(tabname);
+      if (targetTabContent) {
+          targetTabContent.classList.add("active-tab");
+      }
+  }
+  let currentIndex = 1;
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+      updateSlider();
+  }
+  function prevSlide() {
+      currentIndex = (currentIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+      updateSlider();
+  } 
+  function updateSlider() {
+      const slides = document.querySelector('.slides');
+      const slideWidth = document.querySelector('.slide').offsetWidth;
+      const translateValue = -currentIndex * (slideWidth + 10); /* Consider margin between slides */
+      slides.style.transform = `translateX(${translateValue}px)`;
+  }
+  function expandSlide(index) {
+      currentIndex = index;
+      updateSlider();
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Simulate the website content loading
+      setTimeout(function () {
+          document.getElementById("loadingOverlay").style.opacity = "0";
+          document.getElementById("loadingOverlay").style.visibility = "hidden";
+          document.getElementById("mainContent").style.display = "block";
+      }, 2000); // You can adjust the time according to your needs
+  });
+</script>
+<script>
+  function openmenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.style.right = "0";
+  }
+  function closemenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
 </body>
 </html>
